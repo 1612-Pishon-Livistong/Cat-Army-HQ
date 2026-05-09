@@ -17,5 +17,4 @@ Welcome to the digital frontline. This project is a high-fidelity web terminal d
 ## 🕵️ Intel
 There is more to this project than a simple landing page. If you are a true recruit, you will find the breach.
 
-**Developed by:** 1612 (PL) & Alien Thejan
-**Division:** Sri Lanka 🇱🇰
+**Developed by:** 16 12 (PL) 
