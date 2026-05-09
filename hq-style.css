@@ -1,0 +1,176 @@
+/* General BIOS Setup */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #050505 0%, #1a0000 100%);
+    color: #ff0000;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden; /* No scrollbars for that full-screen feel */
+}
+
+/* Visibility Toggles */
+section {
+    display: none; /* Hide everything by default */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+section.active {
+    display: flex; /* Only the active section shows up */
+}
+
+/* The Scanner Animation */
+.scan-container {
+    text-align: center;
+    position: relative;
+}
+
+.paw-print {
+    font-size: 100px;
+    opacity: 0.3;
+}
+
+.scan-line {
+    width: 200px;
+    height: 4px;
+    background: #ff0000;
+    box-shadow: 0 0 15px #ff0000;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scanning 2s infinite ease-in-out;
+}
+
+@keyframes scanning {
+    0%, 100% { top: 0; }
+    50% { top: 120px; }
+}
+
+/* The Crysis Style Card */
+.crysis-frame {
+    width: 80%;
+    max-width: 600px;
+    border: 1px solid #ff0000;
+    background: rgba(255, 0, 0, 0.05);
+    backdrop-filter: blur(10px); /* Makes it look high-tech */
+    padding: 20px;
+    box-shadow: inset 0 0 20px rgba(255, 0, 0, 0.2);
+}
+
+.crysis-frame .header {
+    border-bottom: 1px solid #ff0000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* The Buttons */
+.bios-btn {
+    background: transparent;
+    color: #ff0000;
+    border: 1px solid #ff0000;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.bios-btn:hover {
+    background: #ff0000;
+    color: #000;
+    box-shadow: 0 0 20px #ff0000;
+}
+
+/* Terminal Input */
+input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #ff0000;
+    color: #ff0000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    outline: none;
+    text-align: center;
+}
+
+.bios-stats {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 0.8rem;
+    text-align: right;
+    color: #ff0000;
+    opacity: 0.7;
+}
+
+/* Container for the Google Sheet */
+.data-terminal {
+    width: 90%;
+    max-width: 800px;
+    border: 2px solid #ff0000;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* This makes the iframe itself look more integrated */
+.data-terminal iframe {
+    filter: invert(1) hue-rotate(180deg) brightness(0.8) contrast(1.2);
+    /* The 'invert' trick makes white spreadsheets black! */
+}
+
+/* A pulsing effect for the final button */
+.pulse {
+    animation: pulse-red 2s infinite;
+}
+
+@keyframes pulse-red {
+    0% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(255, 0, 0, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0); }
+}
+
+.action-bar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.register-btn {
+    background: #ff0000 !important; /* Solid red for priority */
+    color: #000 !important;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: 2px solid #fff;
+    transform: skew(-15deg); /* Gives it that 'Crysis' slanted look */
+    transition: 0.2s;
+}
+
+.register-btn:hover {
+    background: #fff !important;
+    color: #ff0000 !important;
+    box-shadow: 0 0 30px #ff0000;
+}
+
+.pulse-red {
+    animation: pulse-red 1.5s infinite;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@keyframes pulse-red {
+    0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7); }
+    70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(255, 0, 0, 0); }
+    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 0, 0, 0); }
+}

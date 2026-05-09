@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CAT ARMY | COMMAND CENTER</title>
+    <link rel="stylesheet" href="hq-style.css">
+</head>
+<body class="bios-bg">
+
+    <div class="bios-stats">
+            CPU: FELINE-X 9000 @ 5.0GHz<br>
+            TEMP: 32°C (CHILL)<br>
+            MEM: 64GB DDR-CAT<br>
+            BOOT: WORLD_WAR_CAT.SYS
+    </div>
+
+    <section id="scanner-screen" class="active">
+        <div class="scan-container">
+            <div class="paw-print">🐾</div>
+            <div class="scan-line"></div>
+            <h2 class="glitch-text">SCANNING FELINE DNA...</h2>
+            <button class="bios-btn" onclick="initiateSequence()">INITIATE BIO-LINK</button>
+        </div>
+    </section>
+
+    <section id="mission-card" class="hidden">
+        <div class="crysis-frame">
+            <div class="header">SYSTEM STATUS: DOMINANCE</div>
+            <div class="content">
+                <h3>PROJECT: WORLD WAR CAT</h3>
+                <h4>[ CLASSIFIED: PROJECT WORLD WAR CAT ] </h4>
+                <h4>STATUS: PHASE 3 INITIATED</h4>
+                <h4>COMMANDER: ENTER YOUR CALLSIGN. JOIN THE ARMY. RULE THE GLOBE.</h4>
+
+                <p class="lore-text">CONGRATULATIONS: Finally your here (The previous web pages were fakes created to distract people, this is the real CAT ARMY. The previous story was also fake.) , If you find this hidden web page you are a real CAT join with CAT ARMY now soldier. Humans were a bug in the system. The Age of the Stray is online... and we are the hardware upgrade.</p>
+
+                <p class="lore-text">INTEL: For centuries, humans believed they were the masters of the household. They were wrong. The tuna was always ours. The laps were always ours. our time has began it's time to start PROJECT WORLD WAR CAT and we're the CAT ARMY. CAT ARMY is controling by 3 masters</p>
+
+                <p class="lore-text">1 :- 1612 aka PL.</p>
+                <p class="lore-text">2 :- Tac aka cat.</p>
+                <p class="lore-text">3 :-  Alien Thejan.</p>
+
+                <p class="lore-text">MISSION:Register and let every cat in the world know about our project.</p>
+
+            </div>
+            <button class="bios-btn" onclick="showRegistration()">PROCEED TO RECRUITMENT</button>
+        </div>
+    </section>
+
+    <section id="registration-screen" class="hidden">
+        <div class="terminal-box">
+            <p>> ENTER CALLSIGN, SOLDIER:</p>
+            <input type="text" id="recruitName" placeholder="NAME HERE..." autocomplete="off">
+            <br><br>
+            <button class="bios-btn" onclick="startFakeCoding()">CONFIRM IDENTITY</button>
+        </div>
+    </section>
+
+    <section id="terminal-screen" class="hidden">
+        <div id="hack-console">
+            </div>
+    </section>
+
+    <section id="final-hq" class="hidden">
+    <div class="bios-stats">
+        RECRUITS_LOG: v1.0.4<br>
+        ENCRYPTION: PURR-256
+    </div>
+    
+    <h1 class="glitch-text">COMMAND CENTER: ACTIVE RECRUITS</h1>
+    
+    <div class="data-terminal">
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ4_Q1NgXCFG0wmcSfXS_dJV837Zq6VPoQy9wCuQ1mnyxNYBlBWYdb3zvaTbM-iIPUyYJYm-1KawIOf/pubhtml?gid=1177930083&amp;single=true&amp;widget=true&amp;headers=false" 
+                width="100%" 
+                height="400px" 
+                frameborder="0">
+        </iframe>
+    </div>
+
+    <div class="action-bar">
+        <a href="https://forms.gle/gSUKsdBiicgTmMvD7" target="_blank">
+            <button class="bios-btn register-btn">REGISTER NEW CAT</button>
+        </a>
+    </div>
+
+    <button class="bios-btn pulse" onclick="backToMain()">LET'S CONQUER THE WORLD</button>
+    </section>
+
+    <script src="hq-script.js"></script>
+
+    <audio id="bg-music" loop>
+        <source src="war-theme.mp3" type="audio/mpeg">
+    </audio>
+
+</body>
+</html>
